@@ -169,7 +169,7 @@
         layer_0 {
             bindings = <
 &Q_Esc          &kp W           &kp E             &kp R        &kp T      &kp Y      &kp U          &kp I                &kp O                    &kp P
-&hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G      &kp H      &hm RCTRL J    &hm RSHFT K          &hm RIGHT_ALT L          &hm RIGHT_GUI SQT
+&hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G      &kp H      &hm LCTRL J    &hm RSHFT K          &hm RIGHT_ALT L          &hm RIGHT_GUI SQT
 &kp Z           &kp X           &kp C             &kp V        &kp B      &kp N      &kp M          &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH
                                 &lt 3 TAB         &lt 2 LANG1  &kp SPACE  &kp ENTER  &kp BACKSPACE  &tog 1
             >;
@@ -178,7 +178,7 @@
         layer_1 {
             bindings = <
 &as LEFT_BRACE LEFT_BRACKET  &as EXCLAMATION NUMBER_1  &as AT_SIGN NUMBER_2  &as HASH NUMBER_3        &as RIGHT_BRACE RIGHT_BRACKET  &none   &none      &none            &none          &none
-&as COLON SEMICOLON          &as DOLLAR NUMBER_4       &as PERCENT N5        &as CARET NUMBER_6       &as PLUS EQUAL                 &none   &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI
+&as COLON SEMICOLON          &as DOLLAR NUMBER_4       &as PERCENT N5        &as CARET NUMBER_6       &as PLUS EQUAL                 &none   &kp LCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI
 &as PIPE NON_US_BACKSLASH    &as AMPERSAND N7          &as ASTERISK N8       &as LEFT_PARENTHESIS N9  &kp SLASH                      &none   &none      &none            &none          &none
                                                        &trans                &lt 2 N0                 &trans                         &trans  &trans     &tog 1
             >;
