@@ -9,8 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 
 &mt {
     tapping-term-ms = <200>;
@@ -164,7 +166,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        layer_0 {
             bindings = <
 &Q_Esc          &kp W           &kp E             &kp R        &kp T      &kp Y      &kp U          &kp I                &kp O                    &kp P
 &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G      &kp H      &hm RCTRL J    &hm RSHFT K          &hm RIGHT_ALT L          &hm RIGHT_GUI SQT
@@ -173,7 +175,7 @@
             >;
         };
 
-        Num {
+        layer_1 {
             bindings = <
 &as LEFT_BRACE LEFT_BRACKET  &as EXCLAMATION NUMBER_1  &as AT_SIGN NUMBER_2  &as HASH NUMBER_3        &as RIGHT_BRACE RIGHT_BRACKET  &none   &none      &none            &none          &none
 &as COLON SEMICOLON          &as DOLLAR NUMBER_4       &as PERCENT N5        &as CARET NUMBER_6       &as PLUS EQUAL                 &none   &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI
@@ -182,7 +184,7 @@
             >;
         };
 
-        Nav {
+        layer_2 {
             bindings = <
 &kp ESC       &none         &none           &none      &none   &kp LC(Z)  &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT)  &kp LC(Y)
 &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none   &kp INS    &kp LEFT      &kp DOWN      &kp RIGHT      &kp HOME
@@ -191,7 +193,7 @@
             >;
         };
 
-        Fn {
+        layer_3 {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3   &bt BT_SEL 4  &kp F1  &kp F2   &kp F3   &kp F4   &none
 &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LG(LCTRL)  &none         &kp F5  &kp F6   &kp F7   &kp F8   &none
@@ -200,7 +202,7 @@
             >;
         };
 
-        Mouse {
+        layer_4 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
 &trans  &trans  &trans  &trans  &trans  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
